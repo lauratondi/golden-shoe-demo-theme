@@ -2,12 +2,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow: auto;
 }
 
 body {
   width: 100vw;
   height: 100vh;
-  /* overflow-x: hidden; */
+  position: absolute;
+  overflow-x: hidden;
 }
 
 p {
@@ -23,6 +25,9 @@ nav {
 
 .navbar-collapse {
   flex-grow: unset !important;
+}
+.fa-lg {
+  line-height: normal;
 }
 
 /* LANDING PAGE */
@@ -41,10 +46,15 @@ nav {
   height: 45%;
 }
 
+.bg h3 {
+  z-index: 1;
+}
+
 /* CAROUSEL */
 .offers {
   text-align: center;
   padding-top: 5%;
+  width: 100%;
 }
 .carousel-item {
   height: 100%;
@@ -52,6 +62,30 @@ nav {
 .carousel-item img {
   object-fit: cover;
   min-height: 100%;
+}
+
+.toggles {
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#toggle-btn {
+  padding: 0 !important;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 6%;
+  background-color: #39a2a0;
 }
 
 /* 668px */

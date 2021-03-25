@@ -19,53 +19,61 @@
     <title>Golden Shoe</title>
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-light fixed-top"
-      role="navigation"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img
-            src="/img/GoldenShoeLogo.png"
-            alt=""
-            width="30"
-            height="24"
-            class="d-inline-block align-text-top"
-          />
-          Golden Shoe
-        </a>
+    <div class="container-fluid" id="landing">
+      <nav
+        class="navbar navbar-expand-lg navbar-light fixed-top"
+        role="navigation"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="/img/GoldenShoeLogo.png"
+              alt=""
+              width="50"
+              height="auto"
+              class="d-inline-block align-text-center"
+            />
+            Golden Shoe
+          </a>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Women</a>
-            <a class="nav-link" href="#">Men</a>
-            <a class="nav-link" href="#">About</a>
-            <a class="nav-link" href="#">Contact</a>
-            <a class="nav-link" href="#"> <i class="fas fa-heart fa-lg"></i></a>
-            <a class="nav-link" href="#"
-              ><i class="fas fa-shopping-bag fa-lg"></i
-            ></a>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Women</a>
+              <a class="nav-link" href="#">Men</a>
+              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#">
+                <i class="fas fa-heart fa-lg"></i
+              ></a>
+              <a class="nav-link" href="#"
+                ><i class="fas fa-shopping-bag fa-lg"></i
+              ></a>
+            </div>
           </div>
         </div>
+      </nav>
+      <!-- CONTAINER -->
+
+      <div class="bg">
+        <h3>Catchy Phrase</h3>
       </div>
-    </nav>
-    <div class="fluid-container" id="landing">
-      <div class="bg"></div>
       <div class="offers">
         <h5>New Collections</h5>
       </div>
+
+      <!-- CAROUSEL -->
       <div
         id="carouselExampleCaptions"
         class="carousel slide"
@@ -137,8 +145,165 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </div>
+      <!-- TOGGLES -->
+      <div class="toggles">
+        <!-- <div> -->
+        <button
+          class="btn"
+          id="toggle-btn"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasBottom"
+          aria-controls="offcanvasBottom"
+        >
+          Shipping
+        </button>
 
+        <div
+          class="offcanvas offcanvas-bottom"
+          tabindex="-1"
+          id="offcanvasBottom"
+          aria-labelledby="offcanvasBottomLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Shipping</h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body small">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat
+            lectus, lacinia id lectus imperdiet, aliquam congue nisi.
+            Pellentesque vitae ante dapibus, volutpat justo vel, auctor elit.
+            Fusce non pharetra ex. Mauris sit amet erat nec leo fringilla
+            placerat vel eu nibh.
+          </div>
+        </div>
+        <!-- </div> -->
+
+        <!-- <div> -->
+        <button
+          class="btn"
+          id="toggle-btn"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasBottom1"
+          aria-controls="offcanvasBottom"
+        >
+          Contact Us
+        </button>
+
+        <div
+          class="offcanvas offcanvas-bottom"
+          tabindex="-1"
+          id="offcanvasBottom1"
+          aria-labelledby="offcanvasBottomLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">
+              Contact Us
+            </h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body small">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat
+            lectus, lacinia id lectus imperdiet, aliquam congue nisi.
+            Pellentesque vitae ante dapibus, volutpat justo vel, auctor elit.
+            Fusce non pharetra ex. Mauris sit amet erat nec leo fringilla
+            placerat vel eu nibh.
+          </div>
+        </div>
+        <!-- </div> -->
+
+        <button
+          class="btn"
+          id="toggle-btn"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasBottom2"
+          aria-controls="offcanvasBottom"
+        >
+          Gift
+        </button>
+
+        <div
+          class="offcanvas offcanvas-bottom"
+          tabindex="-1"
+          id="offcanvasBottom2"
+          aria-labelledby="offcanvasBottomLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Gift</h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body small">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat
+            lectus, lacinia id lectus imperdiet, aliquam congue nisi.
+            Pellentesque vitae ante dapibus, volutpat justo vel, auctor elit.
+            Fusce non pharetra ex. Mauris sit amet erat nec leo fringilla
+            placerat vel eu nibh.
+          </div>
+        </div>
+
+        <button
+          class="btn"
+          id="toggle-btn"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasBottom3"
+          aria-controls="offcanvasBottom"
+        >
+          Shopping Cart
+        </button>
+
+        <div
+          class="offcanvas offcanvas-bottom"
+          tabindex="-1"
+          id="offcanvasBottom3"
+          aria-labelledby="offcanvasBottomLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">
+              Shopping Cart
+            </h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body small">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat
+            lectus, lacinia id lectus imperdiet, aliquam congue nisi.
+            Pellentesque vitae ante dapibus, volutpat justo vel, auctor elit.
+            Fusce non pharetra ex. Mauris sit amet erat nec leo fringilla
+            placerat vel eu nibh.
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER -->
+      <footer>
+        <div class="socials">
+          <i class="fab fa-facebook-square fa-lg"></i>
+          <i class="fab fa-instagram-square fa-lg"></i>
+          <i class="fab fa-twitter fa-lg"></i>
+        </div>
+      </footer>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
