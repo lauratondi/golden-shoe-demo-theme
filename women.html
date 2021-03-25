@@ -19,135 +19,102 @@
     <title>Golden Shoe</title>
   </head>
   <body>
-    <div class="container-fluid" id="landing">
-      <nav
-        class="navbar navbar-expand-lg navbar-light fixed-top"
-        role="navigation"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img
-              src="/img/GoldenShoeLogo.png"
-              alt=""
-              width="50"
-              height="auto"
-              class="d-inline-block align-text-center"
-            />
-            Golden Shoe
-          </a>
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top"
+      role="navigation"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="/img/GoldenShoeLogo.png"
+            alt=""
+            width="50"
+            height="auto"
+            class="d-inline-block align-text-center"
+          />
+          Golden Shoe
+        </a>
 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Women</a>
-              <a class="nav-link" href="#">Men</a>
-              <a class="nav-link" href="#">About</a>
-              <a class="nav-link" href="#">Contact</a>
-              <a class="nav-link" href="#">
-                <i class="fas fa-heart fa-lg"></i
-              ></a>
-              <a class="nav-link" href="#"
-                ><i class="fas fa-shopping-bag fa-lg"></i
-              ></a>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="women.html"
+              >Women</a
+            >
+            <a class="nav-link" href="#">Men</a>
+            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#"> <i class="fas fa-heart fa-lg"></i></a>
+            <a class="nav-link" href="#"
+              ><i class="fas fa-shopping-bag fa-lg"></i
+            ></a>
           </div>
         </div>
-      </nav>
-      <!-- CONTAINER -->
-
+      </div>
+    </nav>
+    <!-- CONTAINER -->
+    <div class="container-fluid" id="landing">
       <div class="bg">
         <h3>Catchy Phrase</h3>
       </div>
       <div class="offers">
-        <h5>New Collections</h5>
+        <h5>Women shoes</h5>
       </div>
 
-      <!-- CAROUSEL -->
-      <div
-        id="carouselExampleCaptions"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="./img/pexels-dương-nhân-3155234.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-md-block">
-              <p><b>Flat</b></p>
-              <p>€ 150</p>
+      <!-- CARDS -->
+      <div class="cards">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card" style="width: 18rem">
+              <img
+                src="./img/pexels-anastasia-shuraeva-5704719.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="card-text">
+                  <h5 class="card-title">Heels</h5>
+                  <p>€ 150</p>
+                </div>
+                <div class="user-list">
+                  <i class="fas fa-heart fa-lg"></i>
+                  <i class="fas fa-shopping-bag fa-lg"></i>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="carousel-item">
-            <img
-              src="./img/pexels-anastasia-shuraeva-5704719.jpg"
-              class="d-block w-100"
-              alt="jordan"
-            />
-            <div class="carousel-caption d-md-block">
-              <p><b>Heels</b></p>
-              <p>€ 120</p>
+          <div class="col-sm-6">
+            <div class="card" style="width: 18rem">
+              <img
+                src="./img/pexels-dương-nhân-3155234.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Flat</h5>
+                <p class="card-text">
+                  € 100
+                  <i class="fas fa-heart fa-lg"></i>
+                  <i class="fas fa-shopping-bag fa-lg"></i>
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
       <!-- TOGGLES -->
       <div class="toggles">
-        <!-- <div> -->
         <button
           class="btn"
           id="toggle-btn"
@@ -182,9 +149,7 @@
             placerat vel eu nibh.
           </div>
         </div>
-        <!-- </div> -->
 
-        <!-- <div> -->
         <button
           class="btn"
           id="toggle-btn"
@@ -221,7 +186,6 @@
             placerat vel eu nibh.
           </div>
         </div>
-        <!-- </div> -->
 
         <button
           class="btn"

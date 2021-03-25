@@ -93,6 +93,26 @@ footer {
   background-color: #39a2a0;
 }
 
+/* WOMEN PAGE */
+.cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.col-sm-6 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* 668px */
 @media (max-width: 43em) {
 }
