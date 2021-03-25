@@ -64,18 +64,85 @@
       </div>
     </nav>
     <!-- CONTAINER -->
-    <div class="container-fluid" id="landing">
-      <div class="bg">
+    <div class="container-fluid" id="container">
+      <div class="bg-landing">
         <h3>Catchy Phrase</h3>
       </div>
-      <div class="offers">
+      <div class="text-page">
         <h5>Women shoes</h5>
       </div>
+      <!-- FILTERS -->
+      <div class="filters">
+        <button
+          style="text-decoration: underline"
+          class="btn"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasFilter"
+          aria-controls="offcanvasExample"
+        >
+          Filters
+        </button>
 
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasFilter"
+          aria-labelledby="offcanvasFilterLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasFilterLabel">
+              Filter by:
+            </h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="dropdown mt-3">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                id="dropdownMenuType"
+                data-bs-toggle="dropdown"
+              >
+                Type
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuType">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown mt-3">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-bs-toggle="dropdown"
+              >
+                Material
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- CARDS -->
       <div class="cards">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm">
             <div class="card" style="width: 18rem">
               <img
                 src="./img/pexels-anastasia-shuraeva-5704719.jpg"
@@ -94,7 +161,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm">
             <div class="card" style="width: 18rem">
               <img
                 src="./img/pexels-dương-nhân-3155234.jpg"
@@ -102,12 +169,46 @@
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title">Flat</h5>
-                <p class="card-text">
-                  € 100
+                <p class="card-title"><b>Flat </b>€100</p>
+                <div>
                   <i class="fas fa-heart fa-lg"></i>
                   <i class="fas fa-shopping-bag fa-lg"></i>
-                </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card" style="width: 18rem">
+              <img
+                src="./img/pexels-anastasia-shuraeva-5704719.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="card-text">
+                  <h5 class="card-title">Heels</h5>
+                  <p>€ 150</p>
+                </div>
+                <div class="user-list">
+                  <i class="fas fa-heart fa-lg"></i>
+                  <i class="fas fa-shopping-bag fa-lg"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card" style="width: 18rem">
+              <img
+                src="./img/pexels-dương-nhân-3155234.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-title"><b>Flat </b>€100</p>
+                <div>
+                  <i class="fas fa-heart fa-lg"></i>
+                  <i class="fas fa-shopping-bag fa-lg"></i>
+                </div>
               </div>
             </div>
           </div>

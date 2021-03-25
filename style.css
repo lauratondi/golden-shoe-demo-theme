@@ -15,9 +15,9 @@ body {
 p {
   margin-bottom: 0 !important;
 }
-.container-fluid {
+/* .container-fluid {
   padding-right: 7% !important;
-}
+} */
 /* NAVBAR */
 nav {
   background-color: #39a2a0;
@@ -31,14 +31,14 @@ nav {
 }
 
 /* LANDING PAGE */
-#landing {
+#container {
   width: 100vw;
   height: 100vh;
   padding: 0% !important;
   margin: 0% !important;
   /* padding-right: 1rem !important; */
 }
-.bg {
+.bg-landing {
   display: flex;
   background-image: url('/img/landing.jpg');
   background-size: cover;
@@ -50,13 +50,13 @@ nav {
   justify-content: center;
 }
 
-.bg h3 {
+.bg-landing h3 {
   z-index: 1;
   color: white;
 }
 
 /* CAROUSEL */
-.offers {
+.text-page {
   text-align: center;
   padding-top: 5%;
   width: 100%;
@@ -102,7 +102,7 @@ footer {
   overflow: hidden;
 }
 
-.col-sm-6 {
+.col-sm {
   display: flex;
   justify-content: center;
   padding-bottom: 2%;
@@ -111,6 +111,12 @@ footer {
 .card-body {
   display: flex;
   justify-content: space-between;
+}
+
+/* FILTERS */
+.mt-3 {
+  height: 20%;
+  margin-top: 0 !important;
 }
 
 /* 668px */
